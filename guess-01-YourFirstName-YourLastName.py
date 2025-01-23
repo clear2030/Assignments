@@ -10,7 +10,7 @@ print('Write a program to compare 2 hard coded numbers with an IF/ELSE')
 
 # -------------------------------------------
 # Add Your Comments Here
-
+# I used if and else statements along with boolean operations to evaluate and print whether the two codes were equal.
 # -------------------------------------------
 
 # (instructions) Add your code here
