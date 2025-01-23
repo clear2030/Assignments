@@ -1,0 +1,18 @@
+user_input = int(input("Please input your age: "))
+
+if(user_input>=21):
+    print("You are able to play in casinos.")
+elif(user_input<21):
+    print("You are not able to play in casinos."
+     )
+    
+user_input_2 = input("What is the color of a banana: ")
+
+if(user_input_2 == "yellow"):
+    print("Corret!")
+else:
+    print("Wrong.")
+    
+user_input_3 = int(input("Type in your friend's age: "))
+
+print("Your friend's age and your age are the same: ", (user_input==user_input_3))
