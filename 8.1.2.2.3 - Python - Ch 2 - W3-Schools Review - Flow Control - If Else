@@ -1,0 +1,46 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.2.2.3 - Python - Ch 2 - W3-Schools Review - Flow Control - If/Else - 🚀 Quiz - ⚓ Of Code Challenge")
+  # Enter Your Code Here:
+  print()
+  
+  user_input = int(input("Please input your age: "))
+
+  if(user_input>=21):
+    print("You are able to play in casinos.")
+  elif(user_input<21):
+    print("You are not able to play in casinos.")
+    print()
+    
+  user_input_2 = input("What is the color of a banana: ")
+
+  if(user_input_2 == "yellow"):
+    print("Corret!")
+  else:
+    print("Wrong.")
+  print()
+    
+  user_input_3 = int(input("Type in your friend's age: "))
+
+  print("Your friend's age and your age are the same: ", (user_input==user_input_3))
+  
+  print()
+  print("Ending 8.1.2.2.3 - Python - Ch 2 - W3-Schools Review - Flow Control - If/Else - 🚀 Quiz - ⚓ Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
