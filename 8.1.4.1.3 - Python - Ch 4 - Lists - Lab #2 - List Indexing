@@ -1,0 +1,8 @@
+my_string = 'Babylon_5'
+my_list = ['B','a','b','y','l','o','n','_','5'] 
+print(my_string[3:-2])
+print(my_list[3:-2])
+
+babylon_5_races = ["Centauri", "Minbari", "Narn", "Human", "Shadow", "Vorlon"]
+print(babylon_5_races[3])
+print(babylon_5_races[int(input("Enter a number "))])
