@@ -2,6 +2,7 @@ import random
 
 my_fibonacci = []
 x = True
+fib_int1 = 0
 
 while x:
     try:
