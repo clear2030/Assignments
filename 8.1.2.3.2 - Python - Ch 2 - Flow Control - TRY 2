@@ -1,0 +1,46 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.2.3.2 - Python - Ch 2 - Flow Control - TRY - 🔎 Review /🛠️ LAB Activity / 🚀 Quiz - ⚓ Of Code Challenge")
+  # Enter Your Code Here:
+  print()
+  
+  my_number = input("enter a number > ")
+  try:
+    my_number = int(my_number)
+    print(my_number, 'is a number')
+  except:
+    print('Please enter a number')
+    print(my_number, 'is NOT a number')
+  print('done')
+  print()
+  
+  x = 5
+  y = 0
+  try:
+      z=x/y
+      print(z)
+  except ZeroDivisionError:
+      print("error")
+      print("you can not divide a number by zero")
+  print("end")
+  
+  print()
+  print("Ending 8.1.2.3.2 - Python - Ch 2 - Flow Control - TRY - 🔎 Review /🛠️ LAB Activity / 🚀 Quiz - ⚓ Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
