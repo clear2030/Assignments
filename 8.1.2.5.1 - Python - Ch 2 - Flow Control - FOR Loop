@@ -1,0 +1,41 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.2.5.1 - Python - Ch 2 - Flow Control - FOR Loop - Code Examples 📰 Slides / 🔎 Presentation Review /📟 Coding / 🛠️ LAB Activity - ⚓ Of Code Challenge")
+  # Enter Your Code Here:
+  print('Enter Your Code Here:')
+  print()
+  
+  count_list = [5, 4, 3, 2, 1]
+  for my_variable in count_list:
+    print(my_variable)
+  print('Done')
+
+  x = 10
+  y = 5
+  for my_var2 in range(x,x*10,y):
+      print(my_var2)
+      
+  for my_var2 in range(3,9):
+      print(my_var2)
+
+  print()
+  print("Ending 8.1.2.5.1 - Python - Ch 2 - Flow Control - FOR Loop - Code Examples 📰 Slides / 🔎 Presentation Review /📟 Coding / 🛠️ LAB Activity - ⚓ Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
+
