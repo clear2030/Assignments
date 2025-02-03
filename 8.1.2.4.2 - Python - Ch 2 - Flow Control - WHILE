@@ -1,0 +1,42 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+import random
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.2.4.2 - Python - Ch 2 - Flow Control - WHILE - 🔎 Review /🛠️ LAB Activity / 🚀 Quiz - ⚓ Of Code Challenge")
+  # Enter Your Code Here:
+  print('Enter Your Code Here:')
+  print()
+  
+  rand_num = random.randint(0,10)
+  y = -1
+  while y != rand_num:
+      y = int(input("Guess the number: "))
+      if(y<rand_num):
+          print("Your number is too low, try again.")
+          continue
+      if(y>rand_num):
+          print("Your number is too high, try again.")
+          continue
+      break
+  print("You got it!")
+          
+  print()
+  print("Ending 8.1.2.4.2 - Python - Ch 2 - Flow Control - WHILE - 🔎 Review /🛠️ LAB Activity / 🚀 Quiz - ⚓ Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
+
