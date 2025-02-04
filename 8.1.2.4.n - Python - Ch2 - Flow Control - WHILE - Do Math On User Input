@@ -1,0 +1,76 @@
+# Python WHILE - Do Math On User Input Lab - Scratch Pad
+# Use this Replit to try some code... Use it as a scratch pad.
+
+'''
+Coding Challenge:
+WHILE - Do Math On User Input Lab 
+
+Use the following Pseudocode to wrtie a program:
+
+ - Ask user for an integer number greater than 20
+ - Don't forget test the <user_number> to see if it's an integer
+ - Set our initial <count> variable to 0
+ - While our <User_number> is greater than 1
+ - Divide the <user_number> by 2
+ - Increase our <count> by 1
+ - end
+
+Expected Output: If the user_number was 20:
+
+  Starting Code Challenge
+  Enter an integer number 20 or greater >20
+  Your number 20 is a valid Integer 20 or greater.  Thanks
+  Starting While Loop - Print Count Variable
+  The user input started as  20
+  The current value of the user input after some math is 10.0
+  The while loop has looped 1 time
+  The current value of the user input after some math is 5.0
+  The while loop has looped 2 time
+  The current value of the user input after some math is 2.5
+  The while loop has looped 3 time
+  The current value of the user input after some math is 1.25
+  The while loop has looped 4 time
+  The current value of the user input after some math is 0.625
+  The while loop has looped 5 time
+  Ending While Loop
+  The While Loop, looped a total of 5 times
+  Ending Code Challenge
+'''
+
+# <Add Any Header Comments, Versioning & License>
+# <Add a Comment Here to describe/explain what you are doing>
+
+# Your Code Starts Here:
+
+# Include any Libraries
+# Declare Any Global Variables
+
+def main():
+    print("Starting Code Challenge")
+    num = 0
+    count = 0
+    
+    while(type(num)==str or num<20):
+        num = input("Enter an integer number 20 or greater >20: ")
+        try:
+            num = int(num)
+            if(num<20):
+                print("That is not a valid Integer please try again")
+        except:
+            print("That is not a valid Integer please try again")
+    if(num >= 20):
+        print("Your number ", num, " is a valid Integer 20 or greater.  Thanks")
+        
+    print("Starting While Loop - Print Count Variable")
+    print("The user input started as", num)
+    while(num>1):
+        num/=2
+        count+=1
+        print("The current value of the user input after some math is", num)
+        print("The while loop has looped ", count, " time")
+        
+    print("Ending While Loop")
+    print("The While Loop, looped a total of ", count, " times")
+    print("Ending Code Challenge")
+
+main()
