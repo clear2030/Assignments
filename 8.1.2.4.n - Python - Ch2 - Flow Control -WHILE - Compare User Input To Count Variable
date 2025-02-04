@@ -1,0 +1,71 @@
+# Python WHILE Loop - Compare User Input To Count Variable Lab
+# Use this Replit to try some code... Use it as a scratch pad.
+
+'''
+Coding Challenge:
+WHILE Loop - Compare User Input To Count Variable Lab
+
+This Challenge is to write code that: 
+Asks the user for an integer number 0 to 9 as input
+Validate it's an integer (Hint: use your TRY/EXCEPT code)
+Prints out the user input.  
+Then use a while loop with a count variable, and loop from 0 to 10, and check when the user input variable matches the count variable.
+When the user variable and the count variable are equal, print "The User variable is equal to the count variable. User = <the user variable value> Count variable = <the count variable>" 
+  
+Expected Output: If the user variable input was "6"
+    Starting Code Challenge
+6
+Starting While Loop - Comparing User & Count Variable
+0
+1
+2
+3
+4
+5
+The User variable is equal to the count variable. 
+User = 6 
+Count = 6
+7
+8
+9
+Starting While Loop
+End Code Challenge
+
+'''
+
+# <Add Any Header Comments, Versioning & License>
+# <Add a Comment Here to describe/explain what you are doing>
+
+# Your Code Starts Here:
+# Enter Your Code Here:
+
+def main():
+    print("Starting Code Challenge")
+    num = 10
+    count = 0
+    
+    while(type(num)==str or num<0 or num>9):
+        num = input("Enter an integer number between 0 and 9: ")
+        try:
+            num = int(num)
+            if(num<0 or num>9):
+                print("That is not a valid Integer please try again")
+        except:
+            print("That is not a valid Integer please try again")
+    
+    print(num)
+    print("Starting While Loop - Comparing User & Count Variable")
+    
+    while(count<10):
+        if(num==count):
+            print("The User variable is equal to the count variable.")
+            print("User = ", num)
+            print("count = ", count)
+        else:
+            print(count)
+        count+=1
+    
+    print("Ending While Loop")
+    print("Ending Code Challenge")
+
+main()
