@@ -1,0 +1,98 @@
+# Functions - Passing Arguments
+print('''Functions - Passing Arguments
+Learn more about Functions here:
+https://www.w3schools.com/python/python_functions.asp
+''')      
+print('''
+Challenge #1
+Run this code
+Run, then Edit the code in the template example:
+      
+Can you follow and explain
+- How arguments are passed from the main code to the function?
+  A copy of the value is created and then passed into the function.
+- Can you explain how a value is 'returned'
+  The value gets sent back to the main code.
+      ''')
+print('''
+----------------------------------------------------
+''')
+
+def my_math(x,y) :
+  z=x+y
+  return z
+
+def main():
+  my_num_1 = 5
+  my_num_2 = 2
+  sum = my_math(my_num_1, my_num_2)
+  print("The sum of", my_num_1, "+", my_num_2, "=",sum)
+
+main()
+print('Done with Challenge 1')
+print('''
+----------------------------------------------------
+''')
+
+print('''
+Challenge #2
+Create a function that multiplies 2 numbers and returns the result
+Enter Code Here:
+----------------------------------------------------      ''')
+# Enter Code Here:
+
+def multiply(num1, num2):
+    return num1*num2
+num1 = 6
+num2 = 5
+print(multiply(num1,num2))
+
+print('''
+----------------------------------------------------
+''')
+
+print('''
+Challenge #3
+Create a function that adds 2 numbers and if the result is odd, adds 1, then returns the result
+Enter Code Here:
+----------------------------------------------------      ''')
+# Enter Code Here:
+
+def addcon(num1, num2):
+    if((num1+num2)%2==1):
+        return num1+num2+1
+    return num1+num2
+num1 = 6
+num2 = 5
+print(addcon(num1,num2))
+print(addcon(num1+3,num2))
+
+print('''
+----------------------------------------------------
+''')
+print('''
+Challenge #4
+Create a single function that takes the 2 argument numbers x,y 
+and a 3rd argument, that selects between Addition, Subtraction, 
+Multiplication, and Division, with the default being Addition. 
+Then returns the result
+Enter Code Here:
+----------------------------------------------------      ''')
+# Enter Code Here:
+
+def maths(x, y, z = "Addition"):
+    if(z == "Addition"):
+        return x+y
+    elif(z == "Subtraction"):
+        return x-y
+    elif(z == "Multiplication"):
+        return x*y
+    elif(z == "Division"):
+        return x/y
+x = int(input("input x: "))
+y = int(input("input y: "))
+z = input("input z: ")
+
+print('''
+----------------------------------------------------
+''')
