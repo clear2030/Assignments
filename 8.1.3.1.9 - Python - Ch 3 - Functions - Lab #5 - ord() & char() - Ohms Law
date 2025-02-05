@@ -1,0 +1,47 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.3.1.9 - Python - Ch 3 - Functions - Lab #5 - ord() & char() - Ohms Law - 📟 Coding / 🛠️ LAB Activity - ⚓ Of Code Challenge")
+  # Enter Your Code Here:
+  print('Enter Your Code Here:')
+  print()
+  
+  print(ord("Ω"))
+  print()
+  
+  print("v=ir -> v/i=r -> 5 volts/20mA = r -> r = " + str(int(5/0.020)) + chr(937))
+  print()
+  
+  volts = 5
+  current = 20
+  resistance = volts/(current/1000)
+  print("v=ir -> v/i=r -> " + str(volts) + " volts/" + str(current) + "mA = r -> r = " + str(resistance) + chr(937))
+  print("A circuit with a voltage of " + str(volts) + "v and a current of " + str(current) + "mA will require a resistor of " + str(resistance) + chr(937))
+  print()
+  
+  volts = float(input("Please input voltage (in volts): "))
+  current = float(input("Please input current (in milliamperes): "))
+  resistance = volts/(current/1000)
+  print("v=ir -> v/i=r -> " + str(volts) + " volts/" + str(current) + "mA = r -> r = " + str(resistance) + chr(937))
+  print("A circuit with a voltage of " + str(volts) + "v and a current of " + str(current) + "mA will require a resistor of " + str(resistance) + chr(937))
+  
+  print()
+  print("Ending 8.1.3.1.9 - Python - Ch 3 - Functions - Lab #5 - ord() & char() - Ohms Law - 📟 Coding / 🛠️ LAB Activity - ⚓ Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
+
