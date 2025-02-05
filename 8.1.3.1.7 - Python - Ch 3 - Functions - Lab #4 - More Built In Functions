@@ -1,0 +1,79 @@
+# Functions Introduction
+print('''Functions Introduction
+There is a big list of built-in functions here:
+https://www.w3schools.com/python/python_ref_functions.asp
+''')      
+print('''
+Challenge #1
+Write some code that uses the following built-in functions
+Run, then Edit the code in the template example:
+      
+Using some built-in Functions
+- abs()    - try some equation like x=(4+5)*-7
+- bin()    - change a decimal number to it's binary
+- ord()    - convert a number or character to it's unicode value
+- chr()    - convert a unicode value to it printable character
+- round()  - Do some math, get a long floating point number and
+             round it.  Then round it to 2 significant digits
+- Pick 3 more functions ant try them...
+- Still have time, pick 3 more      
+      ''')
+print('''
+Be shure to document your code with comments.
+Hint: Check out W3Schools Functions
+- https://www.w3schools.com/python/python_ref_functions.asp
+
+Enter Your Code Here:
+----------------------------------------------------
+''')
+x = -5
+print(x)
+print(abs(x))
+
+x = [True,True,True, 5, "aiwhfieaw"]
+y = [True, False, False, 5]
+z = iter([5,6,7,8])
+print(all(x))
+print(all(y))
+print(any(x))
+print(any(y))
+print(any(y))
+
+x="awf"
+print(ascii(x))
+print(x)
+
+x = 19384912
+print(bin(x))
+print(x)
+print(bool(x))
+print(complex(x))
+
+print(enumerate(z))
+print(divmod(5,4))
+
+x=bin(42)
+print(x[-1])
+print(x[1])
+
+#print(max(z))
+#print(min(z))
+
+mylist = iter(["apple", "banana", "cherry"])
+x = next(mylist)
+print(x)
+x = next(mylist)
+print(x)
+x = next(mylist)
+print(x)
+
+a = next(z)
+print(a)
+a = next(z)
+print(a)
+
+g = 1231
+print(g/5)
+print(round(g/5))
+
+print('Done with Challenge 1')
