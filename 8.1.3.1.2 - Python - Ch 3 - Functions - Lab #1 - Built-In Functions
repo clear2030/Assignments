@@ -1,0 +1,66 @@
+# Python Lab
+print('Playing with Builtin Python Functions')
+student_name = "NL"
+program_creation_date = "2/5/2025"
+print(student_name)
+print(program_creation_date)
+print('''Functions Introduction
+There is a big list of built-in functions here:
+https://www.w3schools.com/python/python_ref_functions.asp
+''')     
+print('''This Lab is about using Python Builtin Functions. Try and show code using the following functions, then pick 4 more to try. ...
+- print()
+- input('enter something here: ')
+- int()
+- type()
+- abs()
+- len()
+
+My code follows:''')
+# update the 'student_name' and 'program_creation_date' variables and add your code here:
+
+x = -5
+print(x)
+print(abs(x))
+
+x = [True,True,True, 5, "aiwhfieaw"]
+y = [True, False, False, 5]
+z = iter([5,6,7,8])
+print(all(x))
+print(all(y))
+print(any(x))
+print(any(y))
+print(any(y))
+
+x="awf"
+print(ascii(x))
+print(x)
+
+x = 19384912
+print(bin(x))
+print(x)
+print(bool(x))
+print(complex(x))
+
+print(enumerate(z))
+print(divmod(5,4))
+
+x=bin(42)
+print(x[-1])
+print(x[1])
+
+#print(max(z))
+#print(min(z))
+
+mylist = iter(["apple", "banana", "cherry"])
+x = next(mylist)
+print(x)
+x = next(mylist)
+print(x)
+x = next(mylist)
+print(x)
+
+a = next(z)
+print(a)
+a = next(z)
+print(a)
