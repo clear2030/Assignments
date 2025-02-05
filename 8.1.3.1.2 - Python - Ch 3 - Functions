@@ -1,0 +1,30 @@
+def my_add(x,y) :
+  z=x+y
+  return z
+
+my_num_1 = 5
+my_num_2 = 2
+sum = my_add(my_num_1, my_num_2)
+print(sum)
+
+def greet(lang):
+    if lang == 'es':
+        return'Hola'
+    elif lang == 'fr':
+        return'Bonjour'
+    else:
+        return'Hello'
+    
+def function1(strings):
+    strings += "a"
+    return strings
+
+def main():
+    print(greet('en'),'Glenn')
+    print(greet('fr'),'Sabine')
+    print(greet('es'),'Carlos')
+    print(function1("awf"))
+    
+main()
+
+
