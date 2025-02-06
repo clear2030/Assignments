@@ -92,6 +92,7 @@ def maths(x, y, z = "Addition"):
 x = int(input("input x: "))
 y = int(input("input y: "))
 z = input("input z: ")
+print(maths(x, y, z))
 
 print('''
 ----------------------------------------------------
