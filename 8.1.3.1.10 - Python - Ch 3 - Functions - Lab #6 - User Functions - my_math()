@@ -89,10 +89,13 @@ def maths(x, y, z = "Addition"):
         return x*y
     elif(z == "Division"):
         return x/y
-x = int(input("input x: "))
-y = int(input("input y: "))
-z = input("input z: ")
-print(maths(x, y, z))
+x = int(input("input 1st number: "))
+y = int(input("input 2nd number: "))
+z = input("input operation (nothing will result in Addition): ")
+if(z == ""):
+    print(maths(x,y))
+else:
+    print(maths(x, y, z))
 
 print('''
 ----------------------------------------------------
