@@ -1,0 +1,30 @@
+def sum_and_avg(t):
+    #x,y,z,zz = t
+    #s = x + y + z + zz
+    s = 0
+    for i in t:
+        s += i
+    a = s/len(t)
+    return(s, a,)
+def sum_and_avg2(x,y,z):
+    s = x + y + z
+    a = s/3
+    return(s, a,)
+# see that the type( of the function is <tuple>)
+print('--------------------------------------')
+print('This is the value of the Tuple returned')
+(sum, avg) = sum_and_avg2(3, 16, 7,)
+my_tuple = (2, 9, 42,76,)
+x = sum_and_avg(my_tuple)
+print(x)
+my_tuple = (2,6,42,)
+(sum, avg) = sum_and_avg(my_tuple)
+print(sum, avg)
+print('type of the 2nd function is', type(sum_and_avg2(3, 8, 5,)))
+print('my_tuple is of type', type(my_tuple))
+sum = x[0]
+avg = x[1]
+print('Sum =', sum)
+print('Sum is of type',type(sum))
+print('Avg =', avg)
+print('Avg is of type',type(avg))
