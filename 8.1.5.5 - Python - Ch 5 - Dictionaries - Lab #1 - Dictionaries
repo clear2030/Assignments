@@ -1,0 +1,48 @@
+# Python Dictionaries
+print('''
+Python Dictionaries - Lists vs. Dictionaries 
+Dictionaries are Key:Value pairs of objects in 
+a list like structure.
+
+Challenge #1
+Run the code, Explain the difference between lists and dictionaries
+      Lists are a linear collection of values in order while a Dictionary is a bag of values with different labels.
+- See that the list is index'able
+- See that the Dictionary is a keyword:value pair
+
+- How do you "index" a dictionary?
+
+- Add an additional key:value pair to the ddd dictionary
+  Imagine that this is a dictionary for a college engineering class.  
+  Does it have a lab? 'lab':'true' , add a short description for 
+  the class. 'description':'short string describing the class'
+
+      ''')
+
+lst = list()
+lst.append(183)
+lst.append("2:00 PM")
+print(lst)
+lst[1] = "3:00 PM"
+print(lst)
+print(lst[1])
+print()
+
+college_engineering_class = dict()
+college_engineering_class['course'] = 182
+college_engineering_class['time'] = "2:00 PM"
+print(college_engineering_class)
+college_engineering_class['time'] = "3:00 PM"
+print(college_engineering_class)
+print(college_engineering_class['time'])
+
+college_engineering_class['lab'] = "true"
+college_engineering_class['description'] = "This introductory course explores the different engineering disciplines to assist students in a choice of a major in engineering."
+print(college_engineering_class)
+
+print()
+print("College Engineering Class Information")
+print("Course:", college_engineering_class["course"])
+print("Time:", college_engineering_class["time"])
+print("Lab:", college_engineering_class["lab"])
+print("Description:", college_engineering_class["description"])
