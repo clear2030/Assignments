@@ -1,0 +1,48 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.5.12* - Python - Ch 5 - W3-Schools Review - Dictionaries - 🛠️ LAB Activity / 🚀 Quiz - ✔️ Mastery Path Of Code Challenge")
+  # Enter Your Code Here:
+  print('Enter Your Code Here:')
+  print()
+  
+  thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+  }
+  print(thisdict)
+  print(thisdict["brand"])
+  thisdict["year"] = "2025"
+  print(len(thisdict))
+  print(type(thisdict))
+  print()
+  
+  thisdict = dict(name = "John", age = 36, country = "Norway")
+  print(thisdict)
+  print()
+  
+  thisdict = dict(restaurant = "Mcdonalds", order = "Big Mac", price = 0)
+  for i in thisdict:
+      print(i, ": ", thisdict[i], sep = "")
+  
+  print()
+  print("Ending 8.1.5.12* - Python - Ch 5 - W3-Schools Review - Dictionaries - 🛠️ LAB Activity / 🚀 Quiz - ✔️ Mastery Path Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
+
