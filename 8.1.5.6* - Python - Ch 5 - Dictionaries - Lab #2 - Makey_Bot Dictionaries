@@ -1,0 +1,58 @@
+# Python Lab - Scratch Pad
+# Use this template to try some code... Use it as a scratch pad.
+# Remember To Copy Your Edited Code To Your GitHub
+# https://github.com/
+
+# Add Any Header Comments, Versioning & License
+# Add a Comment Here to describe/explain what you are doing 
+# What is the purpose of this code… Document It
+
+# Your Code Starts Here:
+# Include any Libraries
+# Declare Any Global Variables
+
+def makeybot(makey_bot = {}):
+  for i in makey_bot: #prints dictionary
+      print(i, ": ", makey_bot[i], sep = "")
+  print()
+  
+  inpt = input("Input a key: ")
+  try:
+      print("Value of", inpt, "key in the dictionary is:", makey_bot[inpt])
+      choice = input("Do you want this value to be updated ?: ")
+      if(choice == "yes"):
+          update = input("Input the updated value: ")
+          makey_bot[inpt] = update
+          print(inpt, ": ", makey_bot[inpt], sep = "")
+  except:
+      print("That is not a key in the dictionary")
+
+def main():
+  print("Starting The Code Challenge")
+  # Declare Any main() Variables - (Not Global)
+
+  print("Starting 8.1.5.6* - Python - Ch 5 - Dictionaries - Lab #2 - Makey_Bot Dictionaries - 📟 Coding / 🛠️ LAB Activity - ⚓ Of Code Challenge")
+  # Enter Your Code Here:
+  print('Enter Your Code Here:')
+  print()
+  
+  makey_bot = {
+      "wave_pattern":[0,0,0,0,0,0],
+      "eyes_rgb_status":0,
+      "rgb_eye_color_1":"#FF0000",
+      "rgb_eye_color_2":"#FF0000",
+      "seven_seg_value":0,
+      "led_1_status":0,
+      "led_1_blink":0,
+      "led_2_status":0,
+      "led_2_blink":0,
+      "led_3_status":0,
+      "led_3_blink":0}
+  makeybot(makey_bot)
+  
+  print()
+  print("Ending 8.1.5.6* - Python - Ch 5 - Dictionaries - Lab #2 - Makey_Bot Dictionaries - 📟 Coding / 🛠️ LAB Activity - ⚓ Of Code Challenge")
+  print("Ending The Code Challenge")
+
+main()
+
