@@ -26,3 +26,20 @@ def main():
     stop_light("green_LED")
     
 main()
+
+# GitHub: https://github.com/clear2030/Assignments/blob/main/MakeyBot_Stop_Light.py
+# Hacker: Nathan Lien  
+# This example code is licensed under the CC BY-NC-SA 4.0, GNU GPL and EUPL
+# https://creativecommons.org/licenses/by-nc-sa/4.0/
+# https://www.gnu.org/licenses/gpl-3.0.en.html
+# https://eupl.eu/
+# Program/Design Name: MakeyBot_Stop_Light.py
+# Description:    This is a program to control (turn on/off) a set of 3 LEDs that takes user input and uses functions, 
+# that can be called with external parameters.
+# program description:
+# 1) Gets user input for the LED status (either 1 or 0)
+# 2) Change those values in the dictionary
+# 3) The function will take those values from the dictionary and turn on/off the corresponding LEDs
+# Dependencies:   python3
+#   Inputs: either 1 or 0 for each LED to indicate if it should be on or off
+#   Outputs: the LEDs turn on or off
