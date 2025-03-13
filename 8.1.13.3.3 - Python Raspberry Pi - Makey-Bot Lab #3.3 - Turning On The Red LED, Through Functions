@@ -1,0 +1,28 @@
+from gpiozero import LED
+import time
+
+red_LED = LED(3)
+yellow_LED = LED(27)
+green_LED = LED(10)
+traffic_light = {"red_LED":0, "yellow_LED":0, "green_LED":0}
+
+def stop_light(var):
+    if traffic_light[var] == 0:
+        eval(var + ".off()")
+    else:
+        eval(var + ".on()")
+    
+def main():
+    print("Welcome to the Makey Bot")
+    red_status = int(input("red: "))
+    yellow_status = int(input("yellow: "))
+    green_status = int(input("green: "))
+    traffic_light["red_LED"] = red_status
+    traffic_light["yellow_LED"] = yellow_status
+    traffic_light["green_LED"] = yellow_status
+    print(traffic_light)
+    stop_light("red_LED")
+    stop_light("yellow_LED")
+    stop_light("green_LED")
+    
+main()
