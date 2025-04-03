@@ -17,39 +17,45 @@ Use the String Methods to find stuff
     - Same Hint an 3
       
       ''')
-start_from = []
-start_to = []
-has_email = []
-oldest_date = -1
-count = 0
+#start_from = []
+#start_to = []
+#has_email = []
+#oldest_date = -1
+#count = 0
 
-xfile = open('text-file-mail-very-short.txt')
-for line in xfile:
-  count += 1
-  line=line.rstrip()
-  if(line.startswith("From:")):
-      start_from.append(count)
-  elif(line.startswith("To:")):
-      start_to.append(count)
-  if("@" in line):
-      has_email.append(count)
-  if("Date: 2008-01-04 16:09:01 -0500 (Fri, 04 Jan 2008)" in line):
-      oldest_date = count
-  print(count, line)
+for i in range(4):
+    xfile = open('text-file-mail-very-short.txt')
+    for line in xfile:
+      #count += 1
+      line=line.rstrip()
+      if(line.startswith("From:") and i==0):
+          #start_from.append(count)
+          print(line)
+      if(line.startswith("To:") and i==1):
+          #start_to.append(count)
+          print(line)
+      if("@" in line and i==2):
+          print(line)
+          #has_email.append(count)
+      if("Date: 2008-01-04 16:09:01 -0500 (Fri, 04 Jan 2008)" in line and i==3):
+          print(line)
+          #oldest_date = count
+      #print(count, line)
+    print()
   
-print()
-print("The numbers at the start of each line were not there in the original file.")
-print("They were added in this code to help number each line.")
-print("All lines that start with \"From:\": ", end = "")
-for i in start_from:
-    print(i, "", end = "")
-print()
-print("All lines that start with \"To:\": ", end = "")
-for i in start_to:
-    print(i, "", end = "")
-print()
-print("All lines with an email address: ", end = "")
-for i in has_email:
-    print(i, "", end = "")
-print()
-print("Line with the oldest \"Date\":", oldest_date)
+#print()
+#print("The numbers at the start of each line were not there in the original file.")
+#print("They were added in this code to help number each line.")
+#print("All lines that start with \"From:\": ", end = "")
+#for i in start_from:
+#    print(i, "", end = "")
+#print()
+#print("All lines that start with \"To:\": ", end = "")
+#for i in start_to:
+#    print(i, "", end = "")
+#print()
+#print("All lines with an email address: ", end = "")
+#for i in has_email:
+#    print(i, "", end = "")
+#print()
+#print("Line with the oldest \"Date\":", oldest_date)
